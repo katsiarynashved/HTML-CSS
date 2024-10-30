@@ -33,12 +33,19 @@
             .header1 {
                 float: left;
                 color: #000000;
-                padding-left: 35px;
+                padding-left: 17px;
+                padding-right: 17px;
                 font-size: 16pt;
                 font-family: 'Times New Roman', Times, serif;
-                margin: 20px;
+                padding: 20px;
+                margin: 0;
+                border-left: 1px solid rgba(0, 0, 0, 0.433);
+                text-decoration: none;
             }
 
+            .cert {
+                border-left: none;
+            }
            
 
             table {
@@ -148,6 +155,7 @@
                     margin: 0;
                 }
 
+                
             </style>
     </head>
     <body  class="body">
@@ -155,10 +163,10 @@
 
         <div class="header_clear"> 
             <!--  <p class="logo"><b>T</b></p>  -->
-            <p class="header1">Certificates</p>
-            <p class="header1">Testing</p>
-            <p class="header1">Help</p>
-            <p class="header1">Contacts</p>
+            <a class="header1 cert" href="#smc">Certificates</a>
+            <a class="header1" href="#testing">Testing</a>
+            <a class="header1" href="#help">Help</a>
+            <a class="header1" href="#contact">Contacts</a>
         </div>
 
     <div class="clearfix">
@@ -176,7 +184,7 @@
     </div>
     
     
-    <div class="smc">
+    <div class="smc" id="smc">
         <p style="font-family: 'Times New Roman', Times, serif; font-size:16pt; text-align: center;"><b>See my certificates</b></p>  
         <table style="text-align: left; margin: auto;">
             <tr style="text-align: center; color: #ffffff; font-size: 110%;">
@@ -204,7 +212,7 @@
         <br>
     </div> 
 
-        <div class="wit">
+        <div class="wit" id="testing">
         <p style="font-family: 'Times New Roman', Times, serif; font-size:16pt; padding-left: 25px;"><b>What is testing?</b></p>
         <dl>
             <dt><blockquote cite="https://en.wikipedia.org/wiki/Software_testing">
@@ -239,7 +247,7 @@
         </ul>
         </div>
 
-        <div class="dynth">
+        <div class="dynth" id="help">
             <p style="padding-left: 25px; font-size: 16pt; color: #ffffff;"><b>Do you need tester's help?</b></p>
             <form action="/Form.txt" style="text-align: center; color: #ffffff;">
                 <input type="radio" id="radio1" name="Yes">
@@ -252,7 +260,7 @@
             </form>
         </div>
 
-        <p class="contact">
+        <p class="contact" id="contact">
             <a href="mailto:shved200125@gmail.com" style="color: #000000; font-size: 16pt;">Email</a>
         </p>
 
