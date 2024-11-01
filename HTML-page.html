@@ -1,26 +1,26 @@
 <!DOCTYPE html>
     <html lang="en">
      <head> 
-         <meta charset="utf-8">
+         <meta charset="utf-8"> 
+         <meta name="author" content="Katsiaryna Shved">
          <title>Made by Katsiaryna Shved</title>
          <link rel="icon" type="image/x-icon" href="C:\Kate\HTML\favicon.jpg">
+        
+         
          <style>
             .body {
                 margin: 0px;
                 background-color:#fffefb;
             }
 
-            .header_clear {
+            .header {
                 background-color: #d1e9ff;
                 font-family: 'Times New Roman', Times, serif;
-                                            
+                display: flex;
+                flex-direction: row;  
+                justify-content: flex-end;                        
             }
 
-            .header_clear::after {
-                content: "";
-                clear: both;
-                display: table;
-            }
 
              .logo {
                 font-size: 20pt;
@@ -31,7 +31,6 @@
             } 
 
             .header1 {
-                float: left;
                 color: #000000;
                 padding-left: 17px;
                 padding-right: 17px;
@@ -39,15 +38,49 @@
                 font-family: 'Times New Roman', Times, serif;
                 padding: 20px;
                 margin: 0;
-                border-left: 1px solid rgba(0, 0, 0, 0.433);
                 text-decoration: none;
             }
 
             .cert {
                 border-left: none;
             }
-           
+                  
+            
+            .banner {
+                background-color: #000000;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: center;
+                justify-content: space-around;
+            }
 
+            .photo {
+                border-radius: 65px;
+                width:30%;
+                background-color: #020100;
+                color: #fffefb;
+                text-align:left;
+                font-family:'Times New Roman', Times, serif;
+                font-size:18pt;  
+                padding: 35px;
+            }
+                
+            .text {
+                font-size: 14pt;
+                font-family: 'Times New Roman', Times, serif;
+                color: #ffffff;
+                padding-right: 35px;
+            }
+
+            .smc {
+                padding-top: 20px;
+                padding-left: 70px;
+                padding-right: 70px;
+                padding-bottom: 30px;
+            }
+
+            
             table {
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             }
@@ -57,51 +90,13 @@
             border-collapse: collapse;
             padding: 20px;
             height: 20px;
-            
             }
 
             th {
             background-color: #2156b2ed;
             }
-            
-           
-            .clearfix::after {
-                content: "";
-                clear: both;
-                display: table;
-                
-            }
 
-            .clearfix {
-                background-color: #000000;
-                
-            }
 
-            .img {
-                background-color: #020100;
-                color: #fffefb;
-                text-align:left;
-                font-family:'Times New Roman', Times, serif;
-                font-size:18pt;  
-                padding: 20px;
-                float: left;  
-                padding-bottom: 100px;         
-                }
-                
-            .text {
-                padding-top: 20px;
-                font-size: 14pt;
-                font-family: 'Times New Roman', Times, serif;
-                color: #ffffff;
-                
-            }
-
-            .smc {
-                padding-top: 20px;
-                padding-left: 70px;
-                padding-right: 70px;
-                padding-bottom: 30px;
-            }
 
             .wit {
                 background-color: #000000;
@@ -161,7 +156,7 @@
     <body  class="body">
     
 
-        <div class="header_clear"> 
+        <div class="header"> 
             <!--  <p class="logo"><b>T</b></p>  -->
             <a class="header1 cert" href="#smc">Certificates</a>
             <a class="header1" href="#testing">Testing</a>
@@ -169,10 +164,10 @@
             <a class="header1" href="#contact">Contacts</a>
         </div>
 
-    <div class="clearfix">
-    <div class="img">
-    <img style="padding: 20px; border-radius: 50px;" src="WIN_20231112_18_03_12_Pro.jpg" alt="Kate's photo" width="400">
-    </div> 
+    <div class="banner">
+    
+    <img class="photo" src="WIN_20231112_18_03_12_Pro.jpg" alt="Kate's photo">
+     
 
     <div class="text">
         <p><b>Hi!</b></p>
